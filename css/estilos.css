@@ -1,0 +1,113 @@
+body,html{
+  height: 100%;
+  margin: 0;
+  
+  
+  }
+  .bg{
+    background-image: linear-gradient(to right, rgb(84, 84, 113), rgb(167, 167, 173));
+  
+  }
+  
+  #h1{
+      font-size: 30px;
+      font-family:   Georgia, 'Times New Roman', Times, serif ;
+      text-align: center;
+      border: 10px;
+      color: white;
+      margin-top: 70px;
+          
+  }
+  
+  #h4{
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+  
+  
+  }
+  
+  #h3{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      text-align: left;
+      margin-top: 50px;
+      color: rgb(0, 0, 0);
+      margin-left: 15px;
+      
+  
+  }
+  
+  
+  ul{
+  
+          list-style-type: circle;
+      }
+      ul li{
+          padding: 3px 0px;
+          color: #00a2ff;
+  }
+  
+   
+   a:link {
+      transition: all 0.3s ease; 
+      text-decoration: none; 
+      font-size: 15px; 
+      font-family: Arial, Helvetica, sans-serif;
+      padding:10px; 
+      color: #e6e6e6; 
+    }
+   
+    
+    a:hover {
+      color: #000000; 
+    }
+   
+  ::selection {
+      background: transparent;
+      color: rgb(0, 0, 0);
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+  
+    }
+    
+    .block {
+      position: relative;
+      margin: 10px auto 0;
+      width: 600px;
+      height: 40px;
+      background: linear-gradient(0deg, #000, #272727);
+    }
+    
+    .block:before, .block:after {
+      content: '';
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+        #0000ff, #00ff00,#ffff00, #ff0000);
+      background-size: 800%;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      z-index: -1;
+      animation: steam 5s linear infinite;
+    }
+    
+    @keyframes steam {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 100% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .block:after {
+      filter: blur(50px);
+    }
